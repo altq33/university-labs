@@ -49,7 +49,7 @@ string dec_to_hex(int ten_num) //перевод в 16-ную систему де
 		switch (ten_num % 16)
 		{
 		case 10:
-			sixt_num += "A";
+			sixt_num = "A" + sixt_num;
 			break;
 		case 11:
 			sixt_num = "B" + sixt_num;
