@@ -284,7 +284,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                     Rectangle(hdc, 400 + j * 40, 200 + i * 40, 430 + j * 40, 230 + i * 40);
                 }
             }
-
+            DeleteObject(EvenB);
+            DeleteObject(OddB);
+            DeleteObject(NullB);
+            DeleteObject(MaxB);
+            DeleteObject(MinB);
             EndPaint(hWnd, &ps);
         }
         break;
